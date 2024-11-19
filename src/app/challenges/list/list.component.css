@@ -1,0 +1,58 @@
+/* Estilo general de la lista */
+.challenges-title {
+    font-size: 2rem;
+    color: #2e3b4e;
+    margin-bottom: 20px;
+  }
+  
+  .challenges-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .challenge-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  .challenge-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .challenge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .challenge-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .challenge-level {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00796b; /* Un color verde similar a Material */
+    background-color: #e0f2f1; /* Fondo suave */
+    padding: 4px 8px;
+    border-radius: 12px;
+  }
+  
+  .challenge-description {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .no-data-text {
+    font-size: 1.2rem;
+    color: #9e9e9e;
+  }
+  

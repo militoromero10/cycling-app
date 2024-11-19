@@ -1,0 +1,15 @@
+<h1 class="challenges-title">Challenges</h1>
+
+<ul *ngIf="challenges.length > 0; else noData" class="challenges-list">
+  <li *ngFor="let challenge of challenges" class="challenge-item">
+    <div class="challenge-header">
+      <strong class="challenge-name">{{ challenge.name }}</strong>
+      <span class="challenge-level">{{ challenge.challengeLevel }}</span>
+    </div>
+    <p class="challenge-description">{{ challenge.description }}</p>
+  </li>
+</ul>
+
+<ng-template #noData>
+  <p class="no-data-text">No challenges found.</p>
+</ng-template>

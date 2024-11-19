@@ -1,0 +1,47 @@
+/* Título de la lista de asignaciones */
+.assignments-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #00796b; /* Verde oscuro */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Lista de asignaciones */
+  .assignments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los elementos */
+  }
+  
+  /* Elementos individuales de las asignaciones */
+  .assignment-item {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .assignment-item:hover {
+    background-color: #00796b; /* Color verde oscuro al pasar el ratón */
+    color: white;
+    transform: scale(1.03); /* Efecto de ampliación al pasar el ratón */
+  }
+  
+  .assignment-name {
+    font-weight: 500;
+  }
+  
+  .assignment-level {
+    font-style: italic;
+    color: #00796b; /* Verde oscuro para el nivel */
+  }
+  

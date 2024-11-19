@@ -1,0 +1,18 @@
+<h2 class="title">Challenges for Cyclist</h2>
+
+<div *ngIf="challenges.length > 0; else noData" class="challenges-list">
+  <div *ngFor="let challenge of challenges" class="challenge-item">
+    <div class="challenge-header">
+      <strong>{{ challenge.challenge }}</strong>
+    </div>
+    <div class="challenge-details">
+      <span>Status: <strong>{{ challenge.bikerChallengeStatus }}</strong></span>
+      <span>Credit Number: <strong>{{ challenge.creditNumber }}</strong></span>
+      <span>Created on: <strong>{{ challenge.creationDate | date: 'short' }}</strong></span>
+    </div>
+  </div>
+</div>
+
+<ng-template #noData>
+  <p class="no-data-text">No challenges found for this cyclist.</p>
+</ng-template>

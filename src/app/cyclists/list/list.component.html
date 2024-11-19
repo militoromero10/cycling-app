@@ -1,0 +1,17 @@
+<h1 class="cyclists-title">Cyclists</h1>
+
+<ul *ngIf="cyclists.length > 0; else noData" class="cyclists-list">
+  <li *ngFor="let cyclist of cyclists" class="cyclist-item">
+    <div class="cyclist-header">
+      <strong class="cyclist-name">
+        <a [routerLink]="['/cyclists/challenges', cyclist.id]">{{ cyclist.name }}</a>
+      </strong>
+      <span class="cyclist-piun">NUIP: {{ cyclist.piun }}</span>
+    </div>
+    <p class="cyclist-birthdate">Birthdate: {{ cyclist.birthdate }}</p>
+  </li>
+</ul>
+
+<ng-template #noData>
+  <p class="no-data-text">No cyclists found.</p>
+</ng-template>

@@ -1,0 +1,30 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00796b; /* Color verde para la barra */
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .navbar-link:hover {
+    color: #004d40; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.1);
+  }
+  
+  .navbar-link.active {
+    font-weight: bold;
+    color: #004d40; /* Color más oscuro para el enlace activo */
+  }
+  

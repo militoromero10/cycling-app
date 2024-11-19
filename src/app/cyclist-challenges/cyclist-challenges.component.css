@@ -1,0 +1,47 @@
+/* Estilos generales para la página */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .challenges-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .challenge-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .challenge-item:hover {
+    background-color: #e1e1e1;
+  }
+  
+  .challenge-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .challenge-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .challenge-details span {
+    margin-bottom: 5px;
+  }
+  
+  .no-data-text {
+    font-size: 16px;
+    color: #888;
+  }
+  

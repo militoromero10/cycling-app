@@ -1,0 +1,22 @@
+<h2>Create Cyclist</h2>
+
+<form [formGroup]="cyclistForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="piun">PIUN:</label>
+    <input id="piun" formControlName="piun" type="number" />
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" type="text" />
+  </div>
+  <div>
+    <label for="birthdate">Birthdate:</label>
+    <input id="birthdate" formControlName="birthdate" type="datetime-local" />
+  </div>
+  <button type="submit" [disabled]="!cyclistForm.valid">Submit</button>
+</form>
+
+<div *ngIf="responseMessage">
+  <p class="response-message">{{ responseMessage }}</p>
+  <p *ngIf="responseStatusCode" class="response-code">Status Code: {{ responseStatusCode }}</p>
+</div>

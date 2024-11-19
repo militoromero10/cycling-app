@@ -1,0 +1,55 @@
+/* Estilo general de la lista */
+.cyclists-title {
+    font-size: 2rem;
+    color: #2e3b4e;
+    margin-bottom: 20px;
+  }
+  
+  .cyclists-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .cyclist-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+  }
+  
+  .cyclist-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .cyclist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cyclist-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .cyclist-piun {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #00796b; /* Color verde para la NUIP */
+  }
+  
+  .cyclist-birthdate {
+    margin-top: 8px;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .no-data-text {
+    font-size: 1.2rem;
+    color: #9e9e9e;
+  }
+  
