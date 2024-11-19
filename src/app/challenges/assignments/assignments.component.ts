@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-assignments',
@@ -12,7 +12,15 @@ export class AssignmentsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get<any[]>('http://localhost:8081/api/challenges')
-      .subscribe(data => this.assignments = data);
+    const headers = new HttpHeaders({
+      'Ocp-Apim-Subscription-Key': '909550e7c1dc4bedb7f60f6af88d0e21'
+    });
+
+    this.http
+      .get<any[]>('https://picagateway.azure-api.net/challenges', { headers })
+      .subscribe(
+        (data) => (this.assignments = data),
+        (error) => console.error('Error fetching challenges:', error)
+      );
   }
 }
